@@ -1,0 +1,7 @@
+<h2><%= @story.title %></h2>
+<div><%= simple_format @story.body %></div>
+<br>
+<hr>
+<b><%= @story.author %></b>
+<br><br>
+<%= link_to "Edit Story", edit_story_path(@story) %>

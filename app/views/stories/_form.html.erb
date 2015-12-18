@@ -1,0 +1,14 @@
+<%= form_for @story do |f| %>
+	<h3><%= f.label :title %></h3>
+	<%= f.text_field :title, :class => "input-single-line" %>
+	<br><br>
+	<h3><%= f.label :author %></h3>
+	<%= f.text_field :author, :class => "input-single-line" %>
+	<br><br>
+	<h3><%= f.label :body %></h3>
+	<%= f.text_area :body, :class => "input"%>
+	<br>
+	<br>
+	<%= f.submit %>
+	<%= link_to "Delete", @story, method: :delete, :id => "delete-button", data: { confirm: "Delete story?"} %>
+<% end %>

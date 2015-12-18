@@ -1,0 +1,9 @@
+<div class="nav-slider">
+  <ul>
+  <li><a href="#">About</li>
+  <hr class="nav">
+  <% @stories.each do |story| %>
+      <li><%= link_to story.title, story %></li>
+  <% end %>
+  </ul>
+</div>

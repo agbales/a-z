@@ -1,0 +1,21 @@
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "stories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "author" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151209025125')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "stories"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "stories" ("title", "author", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', '2015-12-09 04:33:57', '2015-12-09 04:33:57', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "stories" ("title", "author", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', '2015-12-09 04:33:57', '2015-12-09 04:33:57', 298486374)[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+StoriesControllerTest: test_should_get_index
+--------------------------------------------
+Processing by StoriesController#index as HTML
+  [1m[35mStory Load (0.1ms)[0m  SELECT "stories".* FROM "stories"
+  Rendered stories/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 924ms (Views: 922.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
