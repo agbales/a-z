@@ -1,6 +1,6 @@
 == README
 
-A-Z is a Ruby on Rails project that allows students to upload and edit stories to share.
+A-Z is a Ruby on Rails project that allows students to upload, edit, and delete stories.
 
 The title comes from an assignment I developed in which students pass around index cards, adding names that begin with A or Z and from there adding attributes that respond to various prompts I provide. From there, students wrote stories containing all of the elements on a single index card.
 
