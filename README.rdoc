@@ -1,28 +1,6 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A-Z is a Ruby on Rails project that allows students to upload and edit stories to share.
 
-Things you may want to cover:
+The title comes from an assignment I developed in which students pass around index cards, adding names that begin with A or Z and from there adding attributes that respond to various prompts I provide. From there, students wrote stories containing all of the elements on a single index card.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
